@@ -6,6 +6,16 @@ public class CircularQueue {
     int nItems;
 
     int[] queue;
+    // Core Functions
+    // 1. enqueue
+    // 2. dequeue
+    // 3. peek
+
+    // Supporting Functions
+    //isEmpty
+    //isFull
+    //clear
+
 
     public CircularQueue(int maxSize) {
         this.maxSize = maxSize;
@@ -53,11 +63,6 @@ public class CircularQueue {
         }
         return item;
     }
-    //enqueue
-    //dequeue
-    //peek
-    //isEmpty
-    //isFull
 
     private boolean isEmpty() {
 
@@ -66,17 +71,23 @@ public class CircularQueue {
 
     private boolean isFull() {
 
-
-//        if(maxSize == nItems){
-//            return true;
-//        }else{
-//            return false;
-//
-//        }
-
         return maxSize == nItems;
 
 
+    }
+
+    public void printQueue(){
+        for(int i= front; i < back; i++){
+            System.out.print(queue[i]);
+            System.out.print(",");
+        }
+        System.out.println("");
+    }
+
+    public void clear(){
+        front = 0;
+        back = 0;
+        nItems = 0;
     }
 
 
