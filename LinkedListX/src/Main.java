@@ -4,22 +4,27 @@ public class Main {
 	// write your code here
 
         SinglyLinkedList sll = new SinglyLinkedList();
+
         sll.AddToFront(5);
         sll.AddToFront(10);
         sll.AddToFront(15);
 
-
+        System.out.println("Size: " + sll.getSize());
         sll.printLinkedList();
 
         sll.AddToFront(20);
-        sll.printLinkedList();
-
-        sll.removeFromFront();
-        sll.removeFromFront();
-
-        sll.printLinkedList();
 
         System.out.println("Size: " + sll.getSize());
+        sll.printLinkedList();
+
+        // remove items
+        sll.removeFromFront();
+        sll.removeFromFront();
+
+        System.out.println("Size: " + sll.getSize());
+        sll.printLinkedList();
+
+
 
     }
 }

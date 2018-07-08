@@ -1,9 +1,12 @@
 public class SinglyLinkedList {
 
     private IntNode head;
+
+    // represents the number of elements in the linked list
     private int size;
 
     public void AddToFront(int value){
+
         IntNode newNode = new IntNode(value);
         newNode.setNext(head);
         head = newNode;
@@ -35,7 +38,9 @@ public class SinglyLinkedList {
     }
 
     public void printLinkedList(){
+
         IntNode current = head;
+
         while (current != null){
             System.out.print(current.getValue());
             System.out.print(" => ");
