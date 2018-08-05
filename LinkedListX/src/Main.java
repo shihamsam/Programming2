@@ -1,6 +1,49 @@
 public class Main {
 
     public static void main(String[] args) {
+
+        String s1 = "Hello";
+        String s2 = new String(s1);
+
+        boolean val = s1 == s2;
+        boolean val1 = s1.equals(s2);
+
+        System.out.println((s1 == s2) + " " + s1.equals(s2));
+
+//        System.out.println(val);
+//        System.out.println(val1);
+
+//        first:
+//        for (int x=1;x<=3;x++){
+//            System.out.println("x " + x );
+//
+//            for (int y = 1; y <= 3; y++) {
+//                if(y==2) continue first;
+//                System.out.println("y " + y);
+//            }
+//        }
+
+
+        System.out.println("========================");
+
+//        for (int x=1;x<=3;x++){
+//            System.out.println("x " + x );
+//            for (int y = 1; y <= 3; y++) {
+//                if(y==2) break;
+//                System.out.println("y " + y);
+//            }
+//        }
+//        for (int x=1;x<=3;x++){
+//            System.out.println("x " + x );
+//            for (int y = 1; y <= 3; y++) {
+//                if(y==2) break;
+//                System.out.println("y " + y);
+//            }
+//        }
+    }
+
+
+    public static void main1(String[] args) {
 	// write your code here
 
         SinglyLinkedList sll = new SinglyLinkedList();
