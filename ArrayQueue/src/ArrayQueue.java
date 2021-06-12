@@ -36,8 +36,8 @@ public class ArrayQueue {
         }
 
         int item = this.queue[front];
-        this.queue[front] = 0;
-        front++;
+        this.queue[front++] = 0;
+
 
         // This is some optimisation
         if (size() == 0) {
@@ -59,6 +59,7 @@ public class ArrayQueue {
 
     public void printQueue() {
 
+        System.out.println("");
         System.out.print("Front: " + front);
         System.out.println(", Back: " + back);
 

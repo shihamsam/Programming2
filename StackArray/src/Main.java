@@ -2,6 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+
+
         ArrayStack stack = new ArrayStack(10);
         stack.push("Jane");
         stack.push("John");
@@ -9,11 +12,11 @@ public class Main {
 
         stack.printStack();
 
-        System.out.println("pop " + stack.pop());
+        System.out.println("pop => " + stack.pop());
 
-        stack.printStack();
+       stack.printStack();
 
-        System.out.println("Peek " + stack.peek());
+      System.out.println("Peek => " + stack.peek());
 
         stack.printStack();
 

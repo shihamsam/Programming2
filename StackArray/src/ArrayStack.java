@@ -13,12 +13,17 @@ public class ArrayStack {
     }
 
     public void push(String name) {
+
+//        this.top = this.top + 1;
+//        this.stackArray[top] = name;
+
         this.stackArray[++top] = name;
 
     }
 
     public String pop() {
-        return this.stackArray[top--];
+
+         return this.stackArray[top--];
 
     }
 
